@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-1!9u3ao6l2q6oi8!wk)0-u655(aw1t=c8j58^w=ja4i7n@&s4('
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','studygroups.herokuapp.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -46,7 +46,6 @@ AUTH_USER_MODEL = 'Home.User'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
     "corsheaders.middleware.CorsMiddleware",
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
