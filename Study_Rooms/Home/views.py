@@ -86,7 +86,6 @@ def create_topic(request):
 
 
 
-@login_required(login_url='/login')
 def signup_user(request):
     page = 'signup'
     form = MyUserCreationForm()

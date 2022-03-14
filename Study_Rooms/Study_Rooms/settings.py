@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'Home.apps.HomeConfig',
-    'rest_framework',
     'corsheaders',
 ]
 AUTH_USER_MODEL = 'Home.User'
