@@ -47,9 +47,6 @@
                     </div>
                     <span>@ {{message.user.username}}</span>
                   </a>
-                  <span class="thread__date">
-                    {{message.created | timesince}} ago</span
-                  >
                 </div>
                 {% if request.user == message.user %}
                 <a href="/delete_message/{{message.id}}">
@@ -68,9 +65,12 @@
                     </svg>
                   </div>
                 </a>
-                {% endif %}
+              {% endif %}
               </div>
-              <div class="thread__details"><pre>     {{message.body}}</pre></div>
+              <div class="thread__date">
+                <a>{{message.created | timesince}} ago</a></div
+              >
+              <div class="thread__details">{{message.body}}</div>
             </div>
             {% endfor %}
           </div>

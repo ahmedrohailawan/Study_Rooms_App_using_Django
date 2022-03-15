@@ -1,14 +1,14 @@
-{% extends 'main.html' %} {% block title %}Home {% endblock title %} {% block search %} {% include 'Home/room_search.html' %} {% endblock search %} {% block body %}
+{% extends 'main.html' %} {% block title %}Home {% endblock title %} {% block search %} {% include 'room_search.html' %} {% endblock search %} {% block body %}
 
 <main class="layout layout--3">
   <div class="container">
     <!-- Topics Start -->
-    {% include 'Home/room_topics_browse.html' %}
+    {% include 'room_topics_browse.html' %}
     <!-- Topics End -->
 
     <!-- Room List Start -->
     <div class="roomList">
-      {% include 'Home/room_search_mobile.html' %}
+      {% include 'room_search_mobile.html' %}
       <div class="roomList__header">
         <div>
           <h2>Study Groups</h2>
@@ -53,12 +53,12 @@
           </a>
           {% endif %}
         </div>
-      {% include 'Home/room_feed.html' %}
+      {% include 'room_feed.html' %}
     </div>
     <!-- Room List End -->
 
     <!-- Activities Start -->
-    {% include 'Home/room_activities_user.html' %}
+    {% include 'room_activities_user.html' %}
     <!-- Activities End -->
   </div>
 </main>

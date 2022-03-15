@@ -56,7 +56,6 @@
         </form>
 
         <div class="auth__action">
-          <p>Sorry Registeration are closed</p>
           <a href="/signup" class="btn btn--link">Sign Up</a>
         </div>
       </div>
@@ -65,8 +64,8 @@
 </main>
 {% endif %} {% if page == 'signup' %}
 <main class="auth layout">
-  <div class="container">
-    <div class="layout__box" style="top: 70%">
+  <div class="container" >
+    <div class="layout__box"style="top: 70%;" >
       <div class="layout__boxHeader">
         <div class="layout__boxTitle">
           <h3>Sign up</h3>
@@ -76,12 +75,16 @@
         <h2 class="auth__tagline">Find your study partner</h2>
 
         <form class="form" action="" method="POST">
+          <a>*Username should not include spaces</a><br>
           {% csrf_token %} {% for field in form %}
           <div class="form__group form__group">
-            <label for="room_name"> {{field.label}}</label>
+            <label for="room_name">{{field.label}}</label>
             {{field}}
           </div>
           {% endfor %}
+          <a>*Password must be atleast 8 characters</a>
+          <a>*Should not be similar to your Username</a>
+          <a>*Mix of numbers and symbols</a><br><br>
           <button class="btn btn--main" type="submit">
             <svg
               version="1.1"

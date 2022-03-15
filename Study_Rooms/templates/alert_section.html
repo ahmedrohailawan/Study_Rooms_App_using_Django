@@ -2,8 +2,8 @@
 <style>
 .alert {
   padding: 20px;
-  background-color: #71c6dd;
-  color: white;
+  background-color: #2196F3;
+  color: #2d2d39;
   opacity: 1;
   transition: opacity 0.6s;
   margin-bottom: 15px;
@@ -23,9 +23,16 @@
   color: white;
 }
 .message{
-  color: black;
-  font-size: 20px;
-  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  color: var(--color-light);
+}
+@media only screen and (max-width: 600px) {
+  .message{
+    font-size: 1.5rem;
+  }
 }
 </style>
 {% endblock head %}
