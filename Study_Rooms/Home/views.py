@@ -9,7 +9,7 @@ from Home.models import Room,Topic,Message,User
 from Home.forms import TopicForm,RoomForm,MyUserCreationForm,UserForm 
 # Create your views here.
 
-    
+@login_required(login_url='/login')    
 def index(request):
     if request.user.is_authenticated:
         loged_user = request.user
@@ -28,6 +28,7 @@ def index(request):
     context = {'topics':topics,'room_list':room_list,'room_count':room_count,'room_messages':room_messages}
     return render(request, 'index.html',context)
 
+@login_required(login_url='/login')
 def room_page(request,id):
     room = Room.objects.get(id=id)
     room_messages = room.message_set.all()
@@ -45,7 +46,7 @@ def room_page(request,id):
     context = {'room':room,'room_messages':room_messages,'participants':participants}
     return render(request, 'room_page.html',context)
 
-
+@login_required(login_url='/login')
 def room_details(request,id):
     room = Room.objects.get(id=id)
     participants = room.participants.all()
@@ -140,6 +141,7 @@ def logout_user(request):
         messages.success(request, "You are not login...")  
         return redirect('/login')
 
+@login_required(login_url='/login')
 def user_profile(request,id):
     user = User.objects.get(id=id)
     room_messages = user.message_set.all()

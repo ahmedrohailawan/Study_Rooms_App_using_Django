@@ -1,5 +1,5 @@
 {% extends 'main.html' %} {% block title %}Create Topic{% endblock title %} {%block body %}
-{% if user.is_superuser %}
+{% if user.is_authenticated %}
 <main class="create-room layout">
   <div class="container">
     <div class="layout__box">
