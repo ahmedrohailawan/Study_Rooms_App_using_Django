@@ -1,0 +1,1 @@
+⏩Email ❗ admin@gmail.com⏩password ❗ admin ⏩ About project ❗ study groups app using Django ❤️❤️❤️❤️❤️ in which users can signup, login, logout, edit profile, change password, create groups, message in any group, etc. For more functionalities plz visit website using the link.✅
