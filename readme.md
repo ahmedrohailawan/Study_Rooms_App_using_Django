@@ -2,18 +2,27 @@
 
 ### login page
 <img src="https://github.com/ahmedrohailawan/Study_Rooms_App_using_Django/blob/main/readme%20files/pg1.png" width="900">
+
 ### Signup page
 <img src="https://github.com/ahmedrohailawan/Study_Rooms_App_using_Django/blob/main/readme%20files/pg2.png" width="900">
 
-### Home page
+### Study rooms, Recent activities and browse topics in home page
 <img src="https://github.com/ahmedrohailawan/Study_Rooms_App_using_Django/blob/main/readme%20files/pg3.png" width="900">
 
-### Individual group view
+### Individual Study group view
 <img src="https://github.com/ahmedrohailawan/Study_Rooms_App_using_Django/blob/main/readme%20files/pg3.1.png" width="900">
 
-### login page
+### Individual Study Rooms Details
 <img src="https://github.com/ahmedrohailawan/Study_Rooms_App_using_Django/blob/main/readme%20files/pg3.2.png" width="900">
+
+### Personal profile view
 <img src="https://github.com/ahmedrohailawan/Study_Rooms_App_using_Django/blob/main/readme%20files/pg4.png" width="900">
+
+### Public profile view
 <img src="https://github.com/ahmedrohailawan/Study_Rooms_App_using_Django/blob/main/readme%20files/pg4.1.png" width="900">
+
+### Edit profile option
 <img src="https://github.com/ahmedrohailawan/Study_Rooms_App_using_Django/blob/main/readme%20files/pg5.png" width="900">
+
+### Change password option
 <img src="https://github.com/ahmedrohailawan/Study_Rooms_App_using_Django/blob/main/readme%20files/pg6.png" width="900">
